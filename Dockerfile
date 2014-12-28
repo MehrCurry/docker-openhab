@@ -1,4 +1,4 @@
-FROM core/java:oracle-java8
+FROM dockerfile/java:openjdk-7-jre
 
 RUN apt-get -y update && apt-get install -qqy curl unzip
 
