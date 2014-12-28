@@ -21,5 +21,7 @@ RUN for PERSISTENCE in db4o; do ln -sf /opt/addons/org.openhab.persistence.$PERS
 
 RUN mv configurations configurations.dist
 
+VOLUME /opt/openhab/logs
+
 EXPOSE 8080 9123
 CMD /opt/openhab/start.sh
